@@ -25,8 +25,41 @@ const getAllVaccine = async (re, res) => {
                 res.status(500).send({ message: error.message})
             }
         }
+
+        const getVaccine = async (req, res) => {
+            const VaccineId = req.params.id
+            try {
+                const doctor = await Vaccine.findOne({
+                    where: { id: VaccineId }
+                });
+                if (vacinne) {
+                    res.status(200).send(vacinne)
+                } else {
+                    res.status(404).send({ message: `Médico não encontrado com o id ${VaccineId}` })
+                }
+            } catch (error) {
+                res.status(500).send({ message: error.message })
+            }
+        }
+
+        const updateVaccinated = async (req, res) => {
+            const doctorId = req.params.id
+            const favorite = req.body.vaccinated
+            try {
+                const rowsUpdated = await Vaccine.update({ vaccinated }, { where: { id: VaccineId } });
+                if (rowsUpdated && rowsUpdated[0] > 0) {
+                    res.status(200).send({ message: `${rowsUpdated[0]} Vacina atualizada com sucesso` })
+                } else {
+                    res.status(404).send({ message: `Vacina com id ${VaccineId} não encontrado para atualizar informação ` })
+                }
+            } catch (error) {
+                res.status(500).send({ message: error.message })
+            }
+        }
    
 module.exports = {
     createVaccine,
     getAllVaccine,
+    getVaccine,
+    updateVaccinated
 }

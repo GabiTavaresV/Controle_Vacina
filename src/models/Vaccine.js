@@ -1,7 +1,7 @@
 const {Sequelize, DataTypes} = require('sequelize');
-const { database} = require("../db.js")
+const { database} = require("../db")
 
-const Vaccine = database.define('Doctor', {
+const Vaccine = database.define('Vaccine', {
     id: {
         type: DataTypes.BIGINT,
         autoIncrement : true,
