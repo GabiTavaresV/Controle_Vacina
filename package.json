@@ -1,0 +1,22 @@
+{
+  "name": "controle_vacina",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabiTavaresV/Controle_Vacina.git"
+  },
+  "author": "Gabriela Tavares",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GabiTavaresV/Controle_Vacina/issues"
+  },
+  "homepage": "https://github.com/GabiTavaresV/Controle_Vacina#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
