@@ -1,8 +1,12 @@
 const express = require("express");
+
 const app = express();
 
 const index = require("./routes/index")
+const vaccines = require("./routes/vaccine")
+const morgan = require('morgan');
 
+app.use(new morgan("combined"))
 app.use(express.json());
 
 app.use(function (req, res, next) {
@@ -25,5 +29,6 @@ app.options("/*", (req, res) => {
 });
 
 app.use("/", index);
+app.use("/", vaccines);
 
 module.exports = { app };

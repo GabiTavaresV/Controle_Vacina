@@ -1,8 +1,9 @@
-const Vaccine = require("./models/Vaccine.js");
+const Vaccine = require('../models/Vaccine.js');
 
 const createVaccine = async (req, res) => {
     const { name, expected_date, vaccinated} = req.body
     try{
+       console.debug(req.body)
         const vaccine = await Vaccine.create({name, expected_date, vaccinated });
         console.log(`Vacina ${vaccine.name} criada com sucesso!`);
         res.status(201).send(vaccine)
@@ -11,7 +12,7 @@ const createVaccine = async (req, res) => {
     }
 };
 
-const getAllVaccine = async (re, res) => {
+const getAllVaccine = async (req, res) => {
     const vaccinated = req.query.vaccinated 
         try{
             const where = vaccinated ? { where: { vaccinated}} :{}
