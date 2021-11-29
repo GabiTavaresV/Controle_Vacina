@@ -55,7 +55,7 @@ const updateVaccinated = async (req, res) => {
     if (rowsUpdated && rowsUpdated[0] > 0) {
       res
         .status(200)
-        .send({ message: `${rowsUpdated[0]} Vacina atualizada com sucesso` });
+        .send({ message: `${rowsUpdated[0]} Vacina de ${VaccineId} atualizada com sucesso` });
     } else {
       res
         .status(404)
