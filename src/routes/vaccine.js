@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const controller = require("../controllers/vacinneController.js");
+const controller = require("../controllers/vaccineController.js");
 
 router.get("/vaccines", controller.getAllVaccine);
 router.post("/vaccines", controller.createVaccine);
