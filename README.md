@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-  <h2 align="center">Controle Vacinas</h2>
+  <h2 align="center">Controle de Vacinas</h2>
 
   <p align="center">
     Uma API para controlar suas próprias vacinas
@@ -20,8 +20,8 @@
     <ul>
         <li><a href="#endpoints">Endpoints</a></li>
       </ul>
-
-      <!-- ABOUT THE PROJECT -->
+   </li>
+    
 ## Sobre o projeto
 
 Esse projeto tem como objetivo o desenvolvimento de uma API para o controle de suas próprias vacinas para ficar com a sua vacinação sempre em dia.
@@ -34,8 +34,7 @@ O projeto foi criado usando as tecnologias:
 * [PostgreSQL]
 * [Heruko]
 
-<!-- USAGE EXAMPLES -->
-## Utilizando a API
+
 
 ### Endpoints
 
@@ -46,13 +45,9 @@ O usuário tem acesso aos seguintes endpoints:
 - Marcar se tomou a vacina
 
 
-![Endpoints globais][endpoints-globais]
 
-Acesso a todos os endpoints
-- Retornar todas as vacinas cadastradas
-- Retornar apenas uma vacina específica
-- Cadastrar uma nova vacina
-- Marcar se tomou a vacina
 
-<!-- CONTACT -->
+### Contato
+
+
 - [Gabriela Tavares](https://github.com/GabiTavaresV)
