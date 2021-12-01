@@ -6,6 +6,8 @@ router.get("/", function (req, res) {
     title: "Minha API Vaccine Nodejs",
     version: "1.0.0",
   });
+
+  
 });
 
 module.exports = router;

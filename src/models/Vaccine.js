@@ -20,6 +20,9 @@ const Vaccine = database.define("Vaccine", {
   vaccinated: {
     type: DataTypes.BOOLEAN,
   },
+
+ 
+
 });
 
 Vaccine.sync();
